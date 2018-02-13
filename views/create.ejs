@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add to the pack</title>
+    <link rel="stylesheet" href="/style.css" type="text/css">
+</head>
+<body>
+    <div id="wrapper">
+        <h2>Add an animal to the pack</h2>
+        <hr>
+        <div id="form">
+            <form action="/prairie_dogs" method="POST">
+                <h4>Name: <input type="text" name="name"></h4>
+                <h4>Sex: <select name="sex" id="sexDropdown">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select></h4>
+                <h4>Age: <input type="number" name="age"></h4>
+                <h4>Alpha or Beta?: <select name="alphaBeta" id="dropdown">
+                    <option value="Alpha">Alpha</option>
+                    <option value="Beta">Beta</option>
+                </select> <br></h4>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

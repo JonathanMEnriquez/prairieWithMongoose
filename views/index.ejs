@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Where my Dogs At?</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Meet the Family!</h1>
+        <h3>Control this pack of Prairie Doggies</h3>
+
+        <% for (dog of dogs) { %>
+            <a href="/prairie/<%=dog._id%>"><h4><%= dog.name %></h4></a>
+            <a href="/prairie/<%=dog._id%>"><img src="<%= dog.imageSrc %>" alt="<%= dog.name %>" class="profilePic"></a>
+            <h5><%= dog.sex %></h5>
+            <h5><%= dog.age %> years old</h5>
+            <h5>Pack status: <%= dog.status %></h5>
+            <hr><br>
+        <% } %>
+    </div>
+</body>
+</html>
